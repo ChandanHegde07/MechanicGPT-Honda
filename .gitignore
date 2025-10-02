@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+mech/
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# VS Code / IDE files
+.vscode/
+.idea/
+
+# Node / React
+node_modules/
+build/
+dist/
+
+# MacOS files
+.DS_Store

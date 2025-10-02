@@ -1,0 +1,33 @@
+# Web Framework and Templating
+Flask==3.0.0
+Jinja2==3.1.2
+python-dotenv==1.0.0 # For managing environment variables (like API keys)
+
+# AI and LangChain
+langchain==0.0.330
+openai==0.28.1 # Or the SDK for your chosen LLM provider (e.g., google-generativeai)
+langchain-community
+langchain-core
+langchain-openai
+
+# Vector Database (choose one and uncomment)
+# For a local vector store:
+# chromadb-client==0.4.15
+# For PostgreSQL vector support:
+# pgvector==0.2.3
+
+# Database
+psycopg2-binary==2.9.9 # PostgreSQL adapter for Python
+SQLAlchemy==2.0.22
+Flask-SQLAlchemy==3.1.1 # Flask extension for SQLAlchemy integration
+
+# Image Processing (Optional)
+opencv-python-headless==4.8.1.78
+Pillow==10.1.0
+
+# Production Server (choose one)
+# gunicorn==21.2.0 # For Linux/macOS
+# waitress==2.1.2 # For Windows
+
+# Other utilities
+requests==2.31.0 # For making external HTTP requests if needed
