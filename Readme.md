@@ -1,4 +1,4 @@
-# MechanicGPT (Honda Edition) 🏍️
+# MechanicGPT (Honda Edition)
 
 **MechanicGPT (Honda Edition)** is an AI-powered motorcycle diagnostic tool that helps Honda bike owners identify and troubleshoot bike problems through intelligent symptom analysis and expert recommendations.
 
