@@ -19,3 +19,7 @@
 * **AI Integration:** LangChain, OpenAI/Gemini API  
 * **Deployment:** Heroku / Render / Docker  
 * **Version Control:** Git + GitHub
+
+---
+
+**Built for the motorbike community and workshop professionals.**
