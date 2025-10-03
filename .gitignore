@@ -23,3 +23,5 @@ dist/
 
 # MacOS files
 .DS_Store
+
+data/*.pdf
