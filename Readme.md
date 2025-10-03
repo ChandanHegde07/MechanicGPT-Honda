@@ -36,8 +36,8 @@
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/mechanicgpt.git
-    cd mechanicgpt
+    git clone https://github.com/ChandanHegde07/MechanicGPT-Honda
+    cd MechanicGPT-Honda
     ```
 
 2.  **Create and activate a virtual environment:**
