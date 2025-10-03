@@ -1,11 +1,53 @@
-from flask import Flask
-from flask import render_template
+import os                                       
+from dotenv import load_dotenv                  
+from flask import Flask, render_template
+from flask_sqlalchemy import SQLAlchemy
+
+load_dotenv()                            
 
 app = Flask(__name__)
+
+db_url = os.getenv("DATABASE_URL")
+
+app.config["SQLALCHEMY_DATABASE_URI"] = db_url
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False 
+
+db = SQLAlchemy(app)
+
+class DiagnosticRequest(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_query = db.Column(db.Text, nullable=False)
+    ai_response = db.Column(db.Text, nullable=False)
+    
+    def __repr__(self):
+        return f'<Request ID: {self.id}>'
+    
 
 @app.route("/")
 def hello_world(name=None):
     return render_template('index.html', person=name)
+
+@app.route("/test-db")
+def test_db():
+    try:
+        # 1. Create a new "request" object using your model.
+        new_request = DiagnosticRequest(
+            user_query="This is a test query.",
+            ai_response="This is a test response from the AI."
+        )
+        
+        # 2. Add the new object to the database session.
+        db.session.add(new_request)
+        
+        # 3. Commit the session to save the changes to the database.
+        db.session.commit()
+        
+        return "<h1>Success: A new entry was added to the database.</h1>"
+    except Exception as e:
+        # If anything goes wrong, this will show the error message.
+        return f"<h1>Error: Could not add entry to database.</h1><p>{e}</p>"
+# --- END NEW ROUTE ---
+
 
 if __name__ == '__main__':
     app.run(debug=True)
