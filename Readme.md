@@ -16,7 +16,8 @@
 
 ## Tech Stack
 
-*   **Backend:** Python, Flask, SQLAlchemy
+*   **Programming Language:** Python, SQL
+*   **Backend:** Flask, SQLAlchemy
 *   **Database:** PostgreSQL
 *   **AI:** LangChain with Google Gemini
 *   **Pattern:** Retrieval-Augmented Generation (RAG)
