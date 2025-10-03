@@ -14,15 +14,14 @@
 
 ---
 
-## Planned Tech Stack
+## Tech Stack
 
-* **Programming Language:** Python  
-* **Backend:** Flask  
-* **Frontend:** HTML, CSS, JavaScript, React (optional for modern UI)  
-* **Database:** PostgreSQL  
-* **AI Integration:** LangChain, OpenAI/Gemini API  
-* **Deployment:** Heroku / Render / Docker  
-* **Version Control:** Git + GitHub
+*   **Backend:** Python, Flask, SQLAlchemy
+*   **Database:** PostgreSQL
+*   **AI:** LangChain with Google Gemini
+*   **Pattern:** Retrieval-Augmented Generation (RAG)
+
+---
 
 ## Getting Started
 
