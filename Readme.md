@@ -21,7 +21,8 @@
 *   **Database:** PostgreSQL
 *   **AI:** LangChain with Google Gemini
 *   **Pattern:** Retrieval-Augmented Generation (RAG)
-
+*   **Embedding Model:** Hugging Face `all-MiniLM-L6-v2`
+*   **Vector Store:** ChromaDB
 ---
 
 ## Getting Started
