@@ -108,20 +108,3 @@ def create_rag_chain():
     
     print("RAG chain created successfully!")
     return rag_chain
-
-if __name__ == '__main__':
-    if not os.path.exists(VECTOR_STORE_PATH) or not os.listdir(VECTOR_STORE_PATH):
-        print("Vector store not found. Creating a new one...")
-        create_vector_store()
-    else:
-        print("Vector store already exists. Skipping creation.")
-
-    chain = create_rag_chain()
-
-    question = "What is the recommended tire pressure?"
-    print(f"\nAsking question: {question}")
-
-    answer = chain.invoke(question)
-
-    print("\nAnswer:")
-    print(answer)

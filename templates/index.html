@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>MechanicGPT (Honda Edition)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MechanicGPT (Bike Edition)</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <ul id="navigation">
-    {% for item in navigation %}
-        <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
-    {% endfor %}
-    </ul>
-
     <h1>MechanicGPT</h1>
-    <p>is an AI-powered motorcycle diagnostic tool that helps Honda bike owners identify and troubleshoot bike problems through intelligent symptom analysis and expert recommendations.</p>
-    {{ a_variable }}
+    <p>Your AI-powered motorcycle diagnostic assistant.</p>
 
-    {# a comment #}
+    <form action="/diagnose" method="post">
+        <label for="symptom">Describe your bike's symptoms:</label>
+        <br>
+        <textarea id="symptom" name="symptom" rows="4" cols="50" required></textarea>
+        <br>
+        <button type="submit">Diagnose</button>
+    </form>
+
+    <hr>
+
+    <h2>Diagnostic History</h2>
+
+    <!-- This is a Jinja2 'for' loop. It will iterate through the history list. -->
+    {% if history %}
+        {% for item in history %}
+            <div>
+                <h4>Your Question:</h4>
+                <p>{{ item.user_query }}</p>
+                <h4>AI Recommendation:</h4>
+                <pre>{{ item.ai_response }}</pre>
+            </div>
+            <hr>
+        {% endfor %}
+    {% else %}
+        <!-- This message will show if there is no history yet. -->
+        <p>No history yet. Ask your first question!</p>
+    {% endif %}
+
 </body>
 </html>
