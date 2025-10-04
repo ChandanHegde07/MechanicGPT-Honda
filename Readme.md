@@ -62,4 +62,18 @@
 
 ---
 
+## Demo
+
+Here is a look at the application in action.
+
+**Main Interface & Diagnostic History:**
+*The application provides a clean interface for asking questions and displays a complete history of past diagnostics.*
+![Main Application Interface](screenshots/main-page.png)
+
+**Database Verification:**
+*Each query and AI response is successfully persisted in the PostgreSQL database.*
+![Database Verification](screenshots/database-view.png)
+
+---
+
 **Building for the motorbike community and workshop professionals.**
