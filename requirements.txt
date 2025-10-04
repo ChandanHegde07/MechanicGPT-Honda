@@ -1,10 +1,21 @@
-Flask==3.0.0
-Jinja2==3.1.2
-python-dotenv==1.0.0        
-SQLAlchemy==2.0.22           
-Flask-SQLAlchemy==3.1.1      
+#Web Framework
+Flask==3.0.3
+python-dotenv==1.0.1
+
+#Databas
+SQLAlchemy==2.0.29
+Flask-SQLAlchemy==3.1.1
 psycopg2-binary==2.9.9
-langchain==0.0.330
-langchain-google-genai
-pypdf
-langchain-community
+
+#AI Core
+langchain==0.2.1
+langchain-core==0.2.3
+langchain-community==0.2.1
+
+#AI Integrations
+langchain-huggingface==0.0.3
+sentence-transformers==2.7.0
+chromadb==0.5.0
+pypdf==4.2.0
+
+langchain-google-genai==1.0.4

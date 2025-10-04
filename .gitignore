@@ -25,3 +25,5 @@ dist/
 .DS_Store
 
 data/*.pdf
+
+vector_store/
