@@ -89,13 +89,13 @@ This project was built using the official documentation for its core technologie
 
 ### AI & RAG Pipeline
 
-*   **[LangChain Docs](https://python.langchain.com/v0.2/docs/get_started/introduction/)**: The primary framework for building the AI logic.
+*   **[LangChain Docs](https://python.langchain.com/docs/tutorials/llm_chain/)**: The primary framework for building the AI logic.
 *   **Models:**
-    *   [Google Gemini](https://python.langchain.com/v0.2/docs/integrations/llms/google_generative_ai/) (for Generation)
+    *   [Google Gemini](https://python.langchain.com/docs/integrations/chat/google_generative_ai/) (for Generation)
     *   [Hugging Face `all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) (for Embeddings)
 *   **Data Handling:**
     *   [ChromaDB](https://python.langchain.com/v0.2/docs/integrations/vectorstores/chroma/) (Vector Store)
-    *   [PyPDF](https://python.langchain.com/v0.2/docs/integrations/document_loaders/pypdf/) (Document Loader)
+    *   [PyPDF](https://python.langchain.com/docs/integrations/document_loaders/pypdfloader/) (Document Loader)
 *   **API Keys:**
     *   [Google AI Studio](https://ai.google.dev/)
 
