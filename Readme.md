@@ -76,4 +76,29 @@ Here is a look at the application in action.
 
 ---
 
+## Documentation References
+
+This project was built using the official documentation for its core technologies.
+
+### Core Stack
+
+*   [Python](https://docs.python.org/3/)
+*   [Flask (Web Framework)](https://flask.palletsprojects.com/)
+*   [SQLAlchemy (Database ORM)](https://docs.sqlalchemy.org/)
+*   [PostgreSQL (Database)](https://www.postgresql.org/docs/)
+
+### AI & RAG Pipeline
+
+*   **[LangChain Docs](https://python.langchain.com/v0.2/docs/get_started/introduction/)**: The primary framework for building the AI logic.
+*   **Models:**
+    *   [Google Gemini](https://python.langchain.com/v0.2/docs/integrations/llms/google_generative_ai/) (for Generation)
+    *   [Hugging Face `all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) (for Embeddings)
+*   **Data Handling:**
+    *   [ChromaDB](https://python.langchain.com/v0.2/docs/integrations/vectorstores/chroma/) (Vector Store)
+    *   [PyPDF](https://python.langchain.com/v0.2/docs/integrations/document_loaders/pypdf/) (Document Loader)
+*   **API Keys:**
+    *   [Google AI Studio](https://ai.google.dev/)
+
+---
+
 **Building for the motorbike community and workshop professionals.**
